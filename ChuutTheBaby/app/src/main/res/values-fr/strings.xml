@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_play">Jouer</string>
+    <string name="menu_rec">Enregistrer</string>
+    <string name="menu_animation">Mode veilleuse</string>
+
+</resources>

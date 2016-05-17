@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_play"
+            android:icon="@drawable/ic_menu_play"
+            android:title="Jouer" />
+        <item
+            android:id="@+id/nav_rec"
+            android:icon="@drawable/ic_menu_rec"
+            android:title="Enregistrer" />
+        <item
+            android:id="@+id/nav_animation"
+            android:icon="@drawable/ic_menu_animation"
+            android:title="Mode Veilleuse" />
+        <item
+            android:id="@+id/nav_auto"
+            android:icon="@drawable/ic_menu_auto"
+            android:title="Configuration Mode auto" />
+    </group>
+
+    <item android:title="Store">
+        <menu>
+            <item
+                android:id="@+id/nav_babyphone"
+                android:icon="@drawable/ic_menu_babyphone"
+                android:title="Baby Phone" />
+            <item
+                android:id="@+id/nav_video"
+                android:icon="@drawable/ic_menu_video"
+                android:title="Vidéo" />
+        </menu>
+    </item>
+
+</menu>
