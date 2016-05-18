@@ -5,19 +5,19 @@
         <item
             android:id="@+id/nav_play"
             android:icon="@drawable/ic_menu_play"
-            android:title="Jouer" />
+            android:title="@string/menu_play" />
         <item
             android:id="@+id/nav_rec"
             android:icon="@drawable/ic_menu_rec"
-            android:title="Enregistrer" />
+            android:title="@string/menu_rec" />
         <item
             android:id="@+id/nav_animation"
             android:icon="@drawable/ic_menu_animation"
-            android:title="Mode Veilleuse" />
+            android:title="@string/menu_animation" />
         <item
             android:id="@+id/nav_auto"
             android:icon="@drawable/ic_menu_auto"
-            android:title="Configuration Mode auto" />
+            android:title="@string/menu_auto" />
     </group>
 
     <item android:title="Store">
@@ -25,11 +25,11 @@
             <item
                 android:id="@+id/nav_babyphone"
                 android:icon="@drawable/ic_menu_babyphone"
-                android:title="Baby Phone" />
+                android:title="@string/menu_babyphone" />
             <item
                 android:id="@+id/nav_video"
                 android:icon="@drawable/ic_menu_video"
-                android:title="Vidéo" />
+                android:title="@string/menu_video" />
         </menu>
     </item>
 

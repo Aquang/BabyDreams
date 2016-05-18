@@ -5,5 +5,17 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    
+
+    <string name="header_text">Choose your activity</string>
+
+    <string name="menu_play">Play</string>
+    <string name="menu_rec">Record</string>
+    <string name="menu_animation">Night light mode</string>
+    <string name="menu_auto">Auto mode config</string>
+    <string name="menu_babyphone">Babyphone mode</string>
+    <string name="menu_video">Video mode</string>
+
+    <string name="title_main">Launch a random lullaby :</string>
+    <string name="title_rec">Record a lullaby :</string>
+
 </resources>
