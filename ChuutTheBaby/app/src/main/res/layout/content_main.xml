@@ -38,7 +38,8 @@
         android:id="@+id/imageButton"
         android:layout_above="@+id/spinner"
         android:layout_below="@+id/textView"
-        android:layout_alignEnd="@+id/spinner" />
+        android:layout_alignEnd="@+id/spinner"
+        android:onClick="playMusic" />
 
     <Spinner
         android:layout_width="match_parent"
@@ -46,10 +47,28 @@
         android:textColor="@color/colorTextYellow"
         android:background="@drawable/layout_corner"
         android:id="@+id/spinner"
-        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="173dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send me to sleep"
+        android:id="@+id/button"
+        android:onClick="playMusic"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop i&apos;m not sleepy"
+        android:onClick="stopMusic"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
         android:layout_centerHorizontal="true" />
-
-
 
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.astonlille.pierre.chuutthebaby;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,7 +16,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    MediaPlayer mySound;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,8 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        mySound = MediaPlayer.create(this,R.raw.dryer);
     }
 
     @Override
@@ -97,5 +100,19 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    /*@Override
+    protected void onPause() {
+        super.onPause();
+        mySound.release();
+    }*/
+    public void playMusic(View view) {
+        mySound.start();
+    }
+
+
+    public void stopMusic(View view) {
+        
+        mySound.pause();
     }
 }
