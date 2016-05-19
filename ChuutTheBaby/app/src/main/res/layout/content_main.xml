@@ -54,21 +54,16 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send me to sleep"
-        android:id="@+id/button"
-        android:onClick="playMusic"
-        android:layout_alignTop="@+id/spinner"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="stop i&apos;m not sleepy"
+        android:text="@string/button_stop"
+        android:textColor="@color/colorTextYellow"
+        android:background="@drawable/layout_corner"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:onClick="stopMusic"
         android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignTop="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
 
 
 </RelativeLayout>

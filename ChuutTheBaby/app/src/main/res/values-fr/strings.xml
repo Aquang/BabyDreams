@@ -20,4 +20,6 @@
     <string name="title_main">Lancez une berçeuse au hasard :</string>
     <string name="title_rec">Enregistrez une berçeuse :</string>
 
+    <string name="button_stop">Je n ai pas envie de dormir</string>
+
 </resources>
