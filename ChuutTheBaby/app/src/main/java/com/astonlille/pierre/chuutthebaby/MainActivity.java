@@ -18,7 +18,9 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
     MediaPlayer mySound;
+    int paused;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        mySound = MediaPlayer.create(this,R.raw.dryer);
+        mySound = MediaPlayer.create(this,R.raw.jacques);
     }
 
     @Override
@@ -107,18 +109,26 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-    /*@Override
-    protected void onPause() {
-        super.onPause();
-        mySound.release();
-    }*/
     public void playMusic(View view) {
-        mySound.start();
+
+        if(mySound==null){
+            mySound = MediaPlayer.create(this, R.raw.jacques);
+            mySound.setLooping(true);
+            mySound.start();
+
+        }else if (!mySound.isPlaying()){
+            mySound.seekTo(paused);
+            mySound.start();
+        }
     }
 
-
+    //Method() STOP the music
     public void stopMusic(View view) {
-        
         mySound.pause();
+    }
+    //METHOD() PAUSE the music with the position to start right where we stop
+    public void pause(View view) {
+        mySound.pause();
+        paused=mySound.getCurrentPosition();
     }
 }
