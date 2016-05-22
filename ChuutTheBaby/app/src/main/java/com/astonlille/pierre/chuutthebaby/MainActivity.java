@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        mySound = MediaPlayer.create(this,R.raw.jacques);
+
     }
 
     @Override
@@ -110,23 +110,23 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
     public void playMusic(View view) {
-
+    ///JE TESTE POUR NE FAIRE QUE UNE SEULE LECTURE !
         if(mySound==null){
             mySound = MediaPlayer.create(this, R.raw.jacques);
-            mySound.setLooping(true);
+            mySound.setLooping(true);//Boucle de la musique a coupler avec un Timer ?
             mySound.start();
 
         }else if (!mySound.isPlaying()){
-            mySound.seekTo(paused);
+            mySound.seekTo(paused); // On cherche la valeur de paused pour relancer la musique a ce moment là.
             mySound.start();
         }
     }
 
-    //Method() STOP the music
+    //Tout est dans le titre
     public void stopMusic(View view) {
         mySound.pause();
     }
-    //METHOD() PAUSE the music with the position to start right where we stop
+    //METHOD() Pause à linstant INT et on recupere cette valer avec le .getCurrentPosition.
     public void pause(View view) {
         mySound.pause();
         paused=mySound.getCurrentPosition();
