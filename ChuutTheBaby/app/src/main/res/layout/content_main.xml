@@ -61,21 +61,23 @@
         android:paddingRight="10dp"
         android:onClick="stopMusic"
         android:id="@+id/button2"
+        android:layout_marginTop="77dp"
         android:layout_alignTop="@+id/spinner"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp" />
+        android:layout_alignStart="@+id/textView" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorTextYellow"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:background="@drawable/layout_corner"
         android:text="@string/hold_on"
         android:id="@+id/button"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:onClick="pause" />
+        android:onClick="pause"
+        android:layout_marginTop="57dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

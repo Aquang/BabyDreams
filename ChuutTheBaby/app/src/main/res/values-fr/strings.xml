@@ -16,10 +16,12 @@
     <string name="menu_auto">Config mode auto</string>
     <string name="menu_babyphone">Mode babyphone</string>
     <string name="menu_video">Mode video</string>
+    <string name="menu_about">A propos</string>
 
     <string name="title_main">Lancez une berçeuse au hasard :</string>
     <string name="title_rec">Enregistrez une berçeuse :</string>
 
     <string name="button_stop">Je n ai pas envie de dormir</string>
+    <string name="hold_on"> Attends ! </string>
 
 </resources>
