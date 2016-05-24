@@ -4,6 +4,8 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -83,12 +85,19 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+        Fragment newFragment; // This is the fragment you want to put into the FrameLayout
         int id = item.getItemId();
 
         if (id == R.id.nav_play) {
-
+            newFragment = new Fragment();
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.container_main, newFragment); // R.id.fragment_container = FrameLayout ID
+            transaction.commit();
         } else if (id == R.id.nav_rec) {
-
+            newFragment = new Fragment();
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.enregistrer, newFragment); // R.id.fragment_container = FrameLayout ID
+            transaction.commit();
         } else if (id == R.id.nav_animation) {
 
         } else if (id == R.id.nav_auto) {
@@ -96,6 +105,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_babyphone) {
 
         } else if (id == R.id.nav_video) {
+
+        } else if (id == R.id.nav_about) {
 
         }
 

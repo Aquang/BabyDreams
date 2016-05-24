@@ -14,6 +14,16 @@
     tools:context="com.astonlille.pierre.chuutthebaby.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container_main"
+        tools:context="android.support.v4.app.Fragment"
+        tools:ignore="MergeRootFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></FrameLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
