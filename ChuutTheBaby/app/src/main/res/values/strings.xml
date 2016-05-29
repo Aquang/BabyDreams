@@ -40,5 +40,8 @@
         - Raphaël Bouqueau.
         - Pierre Florquin.
     </string>
+    <string name="stop_recording">Stop recording</string>
+    <string name="play_record">Play record</string>
+    <string name="stop_playing">stop playing</string>
 
 </resources>
